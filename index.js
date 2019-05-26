@@ -21,5 +21,7 @@ function digitalClock() {
   let time = h + ':' + m + ':' + s + ' ' + ampm;
   document.getElementById('clockDisplay').innerText = time;
   document.getElementById('clockDisplay').textContent = time;
+
+  setTimeout(digitalClock, 1000);
 }
 digitalClock();
